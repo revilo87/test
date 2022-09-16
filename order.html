@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg shadow-5-strong py-0">
+      <div class="container-fluid">
+        <img
+          width="38rem"
+          src="https://cdn-icons-png.flaticon.com/512/161/161588.png"
+          alt=""
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="http://127.0.0.1:5500/home.html#"
+                target="_parent"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5500/registration.html"
+                target="_blank"
+                >Register</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success text-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div style="margin: 0" class="container-fluid p-3 mb-2 col-12 px-0">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-1" style="text-align: center; padding-top: 80px">
+            Danny's Foods
+          </h1>
+          <table class="table table-hover align-middle">
+            <thead>
+              <tr style="background-color: #ff8303">
+                <th
+                  class="fs-2 text-light"
+                  scope="col"
+                  style="width: 10%; text-align: center"
+                >
+                  Icons
+                </th>
+                <th
+                  class="fs-2 text-light"
+                  scope="col"
+                  style="width: 40%; text-align: center"
+                >
+                  Item Name
+                </th>
+                <th
+                  class="fs-2 text-light"
+                  scope="col"
+                  style="width: 40%; text-align: center"
+                >
+                  Price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th
+                  class="fs-3"
+                  colspan="3"
+                  style="background-color: #fedebe; text-align: center"
+                >
+                  Meals
+                </th>
+              </tr>
+              <tr>
+                <td><img src="images/icons8-cheeseburger-64.png" alt="" /></td>
+                <td class="fs-4">Burger</td>
+                <td class="fs-4">55 PHP</td>
+              </tr>
+              <tr>
+                <td><img src="images/icons8-poultry-leg-48.png" alt="" /></td>
+                <td class="fs-4">Fried Chicken</td>
+                <td class="fs-4">80 PHP</td>
+              </tr>
+              <tr>
+                <td><img src="images/icons8-spaghetti-48.png" alt="" /></td>
+                <td class="fs-4">Spaghetti</td>
+                <td class="fs-4">55 PHP</td>
+              </tr>
+              <tr>
+                <td><img src="images/icons8-pizza-48.png" alt="" /></td>
+                <td class="fs-4">Pizza</td>
+                <td class="fs-4">150 PHP</td>
+              </tr>
+              <tr>
+                <th
+                  class="fs-3"
+                  colspan="3"
+                  style="background-color: #fedebe; text-align: center"
+                >
+                  Drinks
+                </th>
+              </tr>
+              <tr>
+                <td><img src="images/icons8-cola-48.png" alt="" /></td>
+                <td class="fs-4">Coke</td>
+                <td class="fs-4">20 PHP</td>
+              </tr>
+              <tr>
+                <td><img src="images/icons8-sprite-48.png" alt="" /></td>
+                <td class="fs-4">Sprite</td>
+                <td class="fs-4">20 PHP</td>
+              </tr>
+              <tr>
+                <td><img src="images/sarsi.png" alt="" /></td>
+                <td class="fs-4">Sarsi</td>
+                <td class="fs-4">20 PHP</td>
+              </tr>
+              <tr>
+                <td
+                  class="fs-3"
+                  colspan="2"
+                  rowspan="2"
+                  style="background-color: #ffaf42"
+                >
+                  All items are subject to tax. No refunds. All items are not
+                  transferrable.
+                </td>
+                <td class="fs-4">Extra Rice - 20 PHP</td>
+              </tr>
+              <tr>
+                <td class="fs-4">Condiments - 20 PHP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <footer>
+        <div class="contact-center">
+          <p class="fs-3" style="margin-top: 40px">
+            oliver.medallo87@gmail.com | (+63)1234567890
+          </p>
+        </div>
+        <div class="bi-group-center" style="padding-bottom: 40px">
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-facebook"
+                style="font-size: 26px; color: #3b5998"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i class="bi bi-instagram" style="font-size: 26px"></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-twitter"
+                style="font-size: 26px; color: #1da1f2"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-pinterest"
+                style="font-size: 26px; color: #e60023"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-linkedin"
+                style="font-size: 26px; color: #0a66c2"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-youtube"
+                style="font-size: 26px; color: #ff0000"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
