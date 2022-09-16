@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Registration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg shadow-5-strong py-0">
+      <div class="container-fluid">
+        <img width="46rem" src="images/burger-logo.jpg" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="http://127.0.0.1:5500/home.html#"
+                target="_parent"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5500/order.html"
+                target="_blank"
+                >Order</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Register</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-8"></div>
+      <div class="container-fluid col-md-3 p-3 mb-2 fw-bold text-white px-0">
+        <form
+          action="post"
+          style="margin-top: 100px; position: relative; left: 0px; top: 2px"
+        >
+          <div class="mb-3 fs-5">
+            <label for="username" class="form-label mb-1">Username</label>
+            <br />
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="smitj"
+            />
+          </div>
+          <div class="mb-3 fs-5">
+            <label for="first-name" class="form-label mb-1">First name</label>
+            <br />
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              placeholder="John"
+            />
+          </div>
+          <div class="mb-3 fs-5">
+            <label for="last-name" class="form-label mb-1">Last name</label>
+            <br />
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              placeholder="Smith"
+            />
+          </div>
+          <div class="mb-3 fs-5">
+            <label for="pwd" class="form-label mb-1">Password</label> <br />
+            <input
+              type="password"
+              class="form-control"
+              id="pwd"
+              placeholder="***********"
+            />
+          </div>
+          <div class="mb-4 fs-5">
+            <label for="confirm-pwd" class="form-label mb-1"
+              >Confirm password</label
+            >
+            <br />
+            <input
+              type="password"
+              class="form-control"
+              id="confirm-pwd"
+              placeholder="***********"
+            />
+          </div>
+          <select class="form-select mb-2">
+            <option selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <fieldset class="border p-2">
+            <legend class="w-auto fs-5">
+              How many times have you visited our restaurant?
+            </legend>
+            <div class="form-check">
+              <label class="form-check-label" for="NoneAtall">
+                None at all
+              </label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="NumberOfVisit"
+                id="NoneAtall"
+              />
+            </div>
+            <div class="form-check">
+              <label class="form-check-label" for="1-2-times">
+                1-2 times
+              </label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="NumberOfVisit"
+                id="1-2-times"
+              />
+            </div>
+            <div class="form-check">
+              <label class="form-check-label" for="3-5-times">
+                3-5 times
+              </label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="NumberOfVisit"
+                id="3-5-times"
+              />
+            </div>
+            <div class="form-check">
+              <label class="form-check-label" for="5-times">
+                More than 5 times
+              </label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="NumberOfVisit"
+                id="5-times"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="border mb-3 p-2">
+            <legend class="w-auto">Address</legend>
+            <div class="mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="City"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <select class="form-select" id="state" required>
+                <option selected disabled value="">State</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                id="zip"
+                placeholder="Zip"
+                required
+              />
+            </div>
+          </fieldset>
+          <div class="mb-3 fs-5">
+            <label for="UploadFile" class="form-label"
+              >Upload account photo</label
+            >
+            <input type="file" class="form-control" id="UploadFile" /> <br />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <footer class="footer-gradient">
+        <div class="contact-center">
+          <p class="fs-3 text-dark" style="margin-top: 40px">
+            oliver.medallo87@gmail.com | (+63)1234567890
+          </p>
+        </div>
+        <div class="bi-group-center" style="padding-bottom: 40px">
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-facebook"
+                style="font-size: 26px; color: #3b5998"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i class="bi bi-instagram" style="font-size: 26px"></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-twitter"
+                style="font-size: 26px; color: #1da1f2"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-pinterest"
+                style="font-size: 26px; color: #e60023"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-linkedin"
+                style="font-size: 26px; color: #0a66c2"
+              ></i
+            ></a>
+          </div>
+          <div class="bi-center">
+            <a href="#" class="link-secondary"
+              ><i
+                class="bi bi-youtube"
+                style="font-size: 26px; color: #ff0000"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
